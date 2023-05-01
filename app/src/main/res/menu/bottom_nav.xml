@@ -18,13 +18,13 @@
         android:id="@+id/star"
         android:enabled="true"
         android:icon="@drawable/baseline_star_outline_24"
-        android:title="Like"/>
+        android:title="Star"/>
 
     <item
         android:id="@+id/setting"
         android:enabled="true"
         android:icon="@drawable/baseline_settings_24"
-        android:title="Setting"/>
+        android:title="Set"/>
 
 
 </menu>
