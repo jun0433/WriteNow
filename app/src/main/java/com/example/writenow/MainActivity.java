@@ -2,6 +2,8 @@ package com.example.writenow;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 
 import android.os.Bundle;
@@ -11,6 +13,7 @@ import com.example.writenow.Home.HomeFragment;
 import com.example.writenow.Set.SetFragment;
 import com.example.writenow.Star.StarFragment;
 import com.example.writenow.Write.WriteFragment;
+import com.example.writenow.Write.WriteStudentFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         init();
 
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
                 else if (id == R.id.nav_write){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, new WriteFragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, new WriteStudentFragment()).commit();
                     return true;
                 }
                 else if (id == R.id.nav_star){

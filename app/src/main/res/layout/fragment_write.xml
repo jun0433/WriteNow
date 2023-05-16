@@ -58,7 +58,7 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/StudentButton"
+            android:id="@+id/StudentBtn"
             android:layout_width="300dp"
             android:layout_height="90dp"
             android:background="@drawable/button"
@@ -74,7 +74,7 @@
             app:layout_constraintVertical_bias="0.386" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/NewButton"
+            android:id="@+id/NewBtn"
             android:layout_width="300dp"
             android:layout_height="90dp"
             android:layout_marginTop="52dp"
@@ -91,7 +91,7 @@
             app:layout_constraintVertical_bias="0.58" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/OldButton"
+            android:id="@+id/OldBtn"
             android:layout_width="300dp"
             android:layout_height="90dp"
             android:background="@drawable/button"
