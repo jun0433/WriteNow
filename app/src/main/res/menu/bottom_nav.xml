@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <item
         android:id="@+id/nav_home"
+        app:showAsAction="always"
         android:enabled="true"
         android:icon="@drawable/baseline_home_24"
         android:title="Home"/>
@@ -11,18 +13,22 @@
     <item
         android:id="@+id/nav_write"
         android:enabled="true"
+        app:showAsAction="always"
         android:icon="@drawable/baseline_library_books_24"
         android:title="Write"/>
 
     <item
         android:id="@+id/nav_star"
         android:enabled="true"
+        app:showAsAction="always"
         android:icon="@drawable/baseline_star_outline_24"
         android:title="Star"/>
 
     <item
         android:id="@+id/nav_set"
+        android:enabled="true"
         android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="always"
         android:title="Set"/>
 
 
