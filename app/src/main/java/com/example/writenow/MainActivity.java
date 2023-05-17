@@ -9,6 +9,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
+import android.widget.Toast;
+
 import com.example.writenow.Home.HomeFragment;
 import com.example.writenow.Set.SetFragment;
 import com.example.writenow.Star.StarFragment;
@@ -29,7 +35,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        if (isNetworkAvailable()) {
+            Toast.makeText(this, "인터넷에 연결되었습니다.", Toast.LENGTH_SHORT).show();
+            // 인터넷을 사용하는 기능을 실행할 수 있는 코드 작성
+        } else {
+            Toast.makeText(this, "인터넷에 연결되어 있지 않습니다.", Toast.LENGTH_SHORT).show();
+            // 인터넷이 연결되지 않은 상태에서 처리할 코드 작성
+        }
 
         init();
 
@@ -56,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;
             }
+
         });
 
 
@@ -74,4 +87,12 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.main_frame,homeFragment).commitAllowingStateLoss();
 
     }
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
+
 }
