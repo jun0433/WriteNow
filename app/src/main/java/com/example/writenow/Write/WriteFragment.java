@@ -47,8 +47,13 @@ public class WriteFragment extends Fragment {
         StudentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.main_frame, new WriteStudentFragment());
+                fragmentTransaction.commit();
             }
         });
+
+
 
         return view;
     }
@@ -56,11 +61,6 @@ public class WriteFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-
 
 
 

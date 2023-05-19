@@ -39,6 +39,7 @@
             app:layout_constraintVertical_bias="0.162" />
 
         <EditText
+            android:id="@+id/Edt1"
             android:layout_width="380dp"
             android:layout_height="50dp"
             android:hint="컴퓨터공학과"
@@ -63,7 +64,7 @@
             app:layout_constraintVertical_bias="0.338" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/Edt2"
             android:layout_width="380dp"
             android:layout_height="50dp"
             android:hint="IT 창업 동아리를 만들고, 1년동안 운영자로 활동"
@@ -87,7 +88,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/Edt3"
             android:layout_width="380dp"
             android:layout_height="50dp"
             android:hint="조직을 이뤄, 혼자서 이뤄낼 수 없는 성과를 이룸"
@@ -112,6 +113,7 @@
             app:layout_constraintVertical_bias="0.686" />
 
         <EditText
+            android:id="@+id/Edt4"
             android:layout_width="380dp"
             android:layout_height="50dp"
             android:hint="말투는 진중하고 지원동기는 자세하게 작성"
@@ -123,7 +125,7 @@
             app:layout_constraintVertical_bias="0.763" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/appCompatButton"
+            android:id="@+id/MakeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button"
@@ -133,10 +135,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.935" />
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.896" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

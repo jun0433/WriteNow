@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.HomeFragment">
-
+    tools:context=".Write.ResultFragment">
+    
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         >
 
         <TextView
@@ -28,30 +27,50 @@
             app:layout_constraintVertical_bias="0.022" />
 
 
-        <TextView
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:background="@color/gray"
+            android:hint="result"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.405" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/NextBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="23.05"
-            android:textSize="25sp"
+            android:background="@drawable/button"
+            android:text="다음"
+            android:textColor="@color/white"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintHorizontal_bias="0.881"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.121" />
+            app:layout_constraintVertical_bias="0.934" />
 
-        <CalendarView
-            android:id="@+id/calender"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ChangeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:background="@drawable/button"
+            android:text="수정"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintHorizontal_bias="0.111"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.249" />
+            app:layout_constraintVertical_bias="0.934" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
